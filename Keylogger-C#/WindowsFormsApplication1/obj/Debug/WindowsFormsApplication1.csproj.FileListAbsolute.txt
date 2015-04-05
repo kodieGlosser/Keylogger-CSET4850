@@ -1,0 +1,11 @@
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

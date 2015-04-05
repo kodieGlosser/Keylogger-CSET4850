@@ -1,0 +1,3 @@
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb

@@ -1,0 +1,18 @@
+﻿Build started 4/1/2015 10:40:01 PM.
+     1>Project "C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\HookDll\HookDll\HookDll.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D HOOKDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\HookDll.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt HookDll.cpp
+         HookDll.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\HookDll\Release\HookDll.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\HookDll\Release\HookDll.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\HookDll\Release\HookDll.lib" /MACHINE:X86 /SAFESEH /DLL Release\dllmain.obj
+         Release\HookDll.obj
+         Release\stdafx.obj
+            Creating library C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\HookDll\Release\HookDll.lib and object C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\HookDll\Release\HookDll.exp
+         Generating code
+         Finished generating code
+         HookDll.vcxproj -> C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\HookDll\Release\HookDll.dll
+     1>Done Building Project "C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\HookDll\HookDll\HookDll.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.24
