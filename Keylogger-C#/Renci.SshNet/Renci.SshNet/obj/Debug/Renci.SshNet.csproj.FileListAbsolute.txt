@@ -1,0 +1,6 @@
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\Renci.SshNet\Renci.SshNet\bin\Debug\Renci.SshNet.xml
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\Renci.SshNet\Renci.SshNet\bin\Debug\Renci.SshNet.dll
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\Renci.SshNet\Renci.SshNet\bin\Debug\Renci.SshNet.pdb
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\Renci.SshNet\Renci.SshNet\obj\Debug\Renci.SshNet.csprojResolveAssemblyReference.cache
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\Renci.SshNet\Renci.SshNet\obj\Debug\Renci.SshNet.dll
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\Renci.SshNet\Renci.SshNet\obj\Debug\Renci.SshNet.pdb
