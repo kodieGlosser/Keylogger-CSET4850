@@ -11,3 +11,4 @@ C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C
 C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\bin\Debug\Renci.SshNet.xml
 C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Debug\KeyLogger.csprojResolveAssemblyReference.cache
