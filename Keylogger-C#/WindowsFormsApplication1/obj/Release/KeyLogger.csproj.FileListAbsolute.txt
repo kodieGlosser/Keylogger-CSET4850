@@ -6,3 +6,11 @@ C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C
 C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Release\KeyLogger.csproj.GenerateResource.Cache
 C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.exe
 C:\Users\Kodie Glosser\Documents\GitHub\Keylogger\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.pdb
+C:\Users\Kodie\Documents\GitHub\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe.config
+C:\Users\Kodie\Documents\GitHub\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.pdb
+C:\Users\Kodie\Documents\GitHub\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.exe
+C:\Users\Kodie\Documents\GitHub\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\bin\Release\WindowsFormsApplication1.pdb
+C:\Users\Kodie\Documents\GitHub\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Release\KeyLogger.csprojResolveAssemblyReference.cache
+C:\Users\Kodie\Documents\GitHub\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Kodie\Documents\GitHub\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Release\KeyLogger.csproj.GenerateResource.Cache
+C:\Users\Kodie\Documents\GitHub\Keylogger-CSET4850\Keylogger-C#\WindowsFormsApplication1\obj\Release\WindowsFormsApplication1.exe

